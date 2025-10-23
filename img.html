@@ -1,22 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Example</title>
+<title>Student Marksheet</title>
+<style>
+  /* Basic CSS for styling the marksheet */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+</style>
 </head>
 <body>
-  <h2>Example of Image Attributes in HTML</h2>
 
-  <!-- Basic image -->
-  <img src="example.jpg" alt="A beautiful scenery">
+<div class="header">
+  <h1>Excellence Academy</h1>
+  <h2>Student Marksheet - Academic Year 2024-2025</h2>
+</div>
 
-  <!-- With width and height attributes -->
-  <img src="example.jpg" alt="A mountain view" width="300" height="200">
+<div>
+  <h3>Student Information:</h3>
+  <p><strong>Student Name:</strong> John Doe</p>
+  <p><strong>Roll Number:</strong> 12345</p>
+  <p><strong>Class:</strong> 10th Grade</p>
+</div>
 
-  <!-- With title attribute (shows tooltip on hover) -->
-  <img src="example.jpg" alt="A sunset over the sea" title="Sunset view" width="300">
+<table>
+  <thead>
+    <tr>
+      <th>Subject Code</th>
+      <th>Subject Name</th>
+      <th>Full Marks</th>
+      <th>Pass Marks</th>
+      <th>Marks Obtained</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MATH101</td>
+      <td>Mathematics</td>
+      <td>100</td>
+      <td>35</td>
+      <td>85</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>PHY101</td>
+      <td>Physics</td>
+      <td>100</td>
+      <td>35</td>
+      <td>78</td>
+      <td>B+</td>
+    </tr>
+    <tr>
+      <td>CHE101</td>
+      <td>Chemistry</td>
+      <td>100</td>
+      <td>35</td>
+      <td>92</td>
+      <td>A+</td>
+    </tr>
+    <tr>
+      <td>CS101</td>
+      <td>Computer Science</td>
+      <td>100</td>
+      <td>35</td>
+      <td>89</td>
+      <td>A</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4"><strong>Total Marks:</strong></td>
+      <td>344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4"><strong>Percentage:</strong></td>
+      <td>86%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4"><strong>Overall Grade:</strong></td>
+      <td></td>
+      <td>A</td>
+    </tr>
+  </tfoot>
+</table>
 
-  <!-- With style attribute for CSS customization -->
-  <img src="example.jpg" alt="Forest landscape" style="border: 2px solid black; border-radius: 10px;" width="250">
+<div>
+  <h3>Result:</h3>
+  <p><strong>Status:</strong> <span style="color: green;">Pass</span></p>
+  <p><strong>Issue Date:</strong> October 23, 2025</p>
+</div>
 
 </body>
 </html>
